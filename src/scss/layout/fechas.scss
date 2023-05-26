@@ -11,16 +11,6 @@
         gap: 2.4rem;
     }
 }
-.img3 {
-    display: none;
-}   
-
-.img2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 .galeria-img {
     @include m.laptop {
         .img3 {
@@ -48,10 +38,20 @@
         text-align: center;    
     }
 }
-.fechas-flex {
+.column {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .mes {
     text-align: center;
     color: v.$gris;
+}
+.img-fechas {
+    max-width: 40%;
+    object-fit: contain;
+}
+.img-fechas img {
+    object-fit: cover;
 }

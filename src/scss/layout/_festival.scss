@@ -24,24 +24,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 1rem 1rem;
+        margin: 1.6rem;
         letter-spacing: .8px;
     }
 }
 
-
-.propuesta-txt {
-    line-height: 1.5;
-    h2{
-        color: white;
-        padding-top: 3rem;
-    }
-
-    .fecha{
-        color: v.$rojo ;
-        font-weight: 700;
-    }
-};
+.fecha{
+    color: v.$rojo ;
+    font-weight: 700;
+}
 
 
     

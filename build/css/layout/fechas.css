@@ -10,16 +10,6 @@
   }
 }
 
-.img3 {
-  display: none;
-}
-
-.img2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @media (min-width: 992px) {
   .galeria-img .img3 {
     display: block;
@@ -27,7 +17,11 @@
     grid-column: 1/2;
     margin-top: 1.6rem;
   }
+  .galeria-img .aside {
+    grid-column: 2/3;
+  }
 }
+
 @media (min-width: 992px) {
   .prox {
     display: none;
@@ -44,13 +38,25 @@
   text-align: center;
 }
 
-.fechas-flex {
+.column {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mes {
   text-align: center;
   color: rgb(189, 179, 179);
+}
+
+.img-fechas {
+  max-width: 40%;
+  object-fit: contain;
+}
+
+.img-fechas img {
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=fechas.css.map */
