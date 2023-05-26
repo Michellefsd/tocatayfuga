@@ -23,8 +23,8 @@ p {
     color: v.$gris;
 }
 
-.contenedor {
-    width: 88%;
+.container {
+    width: 80%;
     max-width: 120rem;
     margin: 0 auto;
 }
@@ -57,25 +57,15 @@ img {
     // height: auto;    y para solucionar los problemas q eso causa
     display: block;
  }
-.rojo{
-    color: v.$rojo;
-    text-align: center;
-};
-.rojo1{
- color: white;
-}
+
 .margin {
     margin-top: 1.6rem;
 }
 .padding {
-    padding: 1.6rem auto 0;  
+    padding: 1.6rem auto;  
  }
 .scroll {
     scroll-snap-align: center;
     scroll-snap-stop: always;
     scroll-behavior: smooth;
 }  
-.flex {
-    display: flex;
-    justify-content: center;
-}

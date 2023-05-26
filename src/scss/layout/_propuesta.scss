@@ -31,16 +31,16 @@
 }
 
 @include m.laptop {
-    .contenedor-img {
+    .container-img {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .contenedor-img picture {
+    .container-img picture {
         display: block;
         max-width: 70rem;
     }
-    .contenedor-img picture img {
+    .container-img picture img {
         max-width: 100%;
     }
 }

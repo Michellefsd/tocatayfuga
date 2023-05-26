@@ -388,7 +388,7 @@ img {
   scroll-behavior: smooth;
 }
 
-.flex {
+/* .flex {
   display: flex;
   justify-content: center;
 }
@@ -453,7 +453,7 @@ img {
 }
 .header a:hover {
   color: rgb(201, 195, 195);
-}
+} */
 
 .navegacion-principal {
   scroll-snap-align: center;

@@ -11,19 +11,20 @@
     @include m.laptop {
         margin-top: 1.6rem;
         display: flex;
-        max-width: 80%;
+        max-width: 70%;
         justify-content: center;
         align-items: center;  
         gap: 1.6rem
     }   
 };
 
+
  @include m.laptop {
     .propuesta-txt {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 1rem 15rem;
+        margin: 1rem 1rem;
         letter-spacing: .8px;
     }
 }
