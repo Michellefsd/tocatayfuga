@@ -1,0 +1,51 @@
+.footer {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+@media (min-width: 480px) {
+  .footer {
+    text-align: center;
+  }
+}
+.footer a {
+  color: rgb(189, 179, 179);
+  padding: 0 1.6rem;
+}
+.footer a:hover {
+  color: rgb(184, 179, 179);
+}
+
+.nav-princ-footer {
+  margin-top: 1.6rem;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+.nav-princ-footer a {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1.6rem;
+  color: rgb(189, 179, 179);
+  font-size: 2.4rem;
+}
+.nav-princ-footer a:hover {
+  color: white;
+}
+@media (min-width: 768px) {
+  .nav-princ-footer a {
+    display: inline;
+  }
+}
+
+.copyright {
+  margin: 1.6rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .copyright {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,60 @@
+.gridd {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+@media (min-width: 992px) {
+  .gridd {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+}
+
+.img3 {
+  display: none;
+}
+
+.img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .galeria-img .img3 {
+    display: block;
+    align-items: center;
+    grid-column: 1/2;
+    margin-top: 1.6rem;
+  }
+  .galeria-img .aside {
+    grid-column: 2/3;
+  }
+}
+
+@media (min-width: 992px) {
+  .prox {
+    display: none;
+  }
+}
+.btn {
+  background-color: rgb(189, 179, 179);
+  padding: 1.6rem;
+  display: flex;
+  justify-content: center;
+}
+.btn a {
+  color: white;
+  text-align: center;
+}
+
+.fechas-flex {
+  display: flex;
+}
+
+.mes {
+  text-align: center;
+  color: rgb(189, 179, 179);
+}
+
+/*# sourceMappingURL=fechas.css.map */

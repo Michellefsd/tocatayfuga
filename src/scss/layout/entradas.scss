@@ -1,0 +1,38 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 1.6rem;
+    margin: 1.6rem;
+    justify-content: center;
+    align-items: center;
+}
+.img-gal {
+    @include m.laptop {
+        display: block;
+        justify-content: center;
+        max-width: 80%;
+        height: auto;
+        padding: 2.4rem;
+        margin: 1.6rem auto;
+    }
+}
+.especial-img {
+    max-width: 100%;
+    margin-bottom: 1.6rem;
+    @include m.tablet {
+        max-width: 69%;
+    }
+}
+.link {
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    h1 {
+        margin: 1.6rem auto;
+    }
+}    

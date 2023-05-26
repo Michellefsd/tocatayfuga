@@ -1,0 +1,57 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.gridd{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    
+   @include m.laptop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.4rem;
+    }
+}
+.img3 {
+    display: none;
+}   
+
+.img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.galeria-img {
+    @include m.laptop {
+        .img3 {
+            display: block;
+            align-items: center;
+            grid-column: 1/2;
+            margin-top: 1.6rem;
+        }     
+        .aside {
+            grid-column: 2/3;
+        }    
+    }    
+};    
+@include m.laptop {     
+    .prox {display: none;}
+}
+
+.btn {
+    background-color: v.$gris ;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: center;
+    a{
+        color: white;
+        text-align: center;    
+    }
+}
+.fechas-flex {
+    display: flex;
+}
+.mes {
+    text-align: center;
+    color: v.$gris;
+}

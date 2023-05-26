@@ -1,0 +1,46 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.principal-img {
+    padding: 1.6rem;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    @include m.semitablet {
+        margin-top: 5rem;
+    }
+    @include m.laptop {
+        margin-top: 1.6rem;
+        display: flex;
+        max-width: 80%;
+        justify-content: center;
+        align-items: center;  
+        gap: 1.6rem
+    }   
+};
+
+ @include m.laptop {
+    .propuesta-txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1rem 15rem;
+        letter-spacing: .8px;
+    }
+}
+
+
+.propuesta-txt {
+    line-height: 1.5;
+    h2{
+        color: white;
+        padding-top: 3rem;
+    }
+
+    .fecha{
+        color: v.$rojo ;
+        font-weight: 700;
+    }
+};
+
+
+    

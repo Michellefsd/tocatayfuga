@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["_index.scss"],"sourcesContent":["@forward 'variables';\r\n@forward 'mixins';\r\n@forward 'normalize';\r\n@forward 'globales';\r\n"],"file":"_index.css"}

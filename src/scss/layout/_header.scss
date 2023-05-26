@@ -1,0 +1,87 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header {
+        scroll-snap-align: center;
+        scroll-snap-stop: always;  
+        position: relative;
+        z-index:1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    h1 {
+        color: v.$gris;
+        text-align: center;
+        margin: 1.6rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: absolute;
+        top: 130%;
+        @include m.laptop{
+            position: fixed;
+            top:0;
+        }
+        @include m.semitablet {
+            position: absolute;
+            top: 30rem;
+            right: 20%;
+        }
+        @include m.tablet {
+            position: absolute;
+            top: 38rem;
+            right: 20rem;
+        }
+        @include m.laptop {
+            display: none;
+        }
+        @include m.pc {
+           display: none;
+        }
+    }
+    @include m.phone {
+        text-align: center;
+    }
+    a{
+        color:v.$gris; 
+        padding: 0 1.6rem;
+        &:hover {
+            color: rgb(201, 195, 195);
+        }
+    }
+
+ 
+}
+
+.navegacion-principal {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    
+    a{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 1.6rem; 
+    }
+    
+  
+    @include m.laptop{
+        text-align: end;
+    }
+    @include m.tablet {
+        a{
+            display: inline;
+        }
+    }
+}
+.fix {
+    position: relative;
+    @include m.laptop {
+        position: fixed;
+    }
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

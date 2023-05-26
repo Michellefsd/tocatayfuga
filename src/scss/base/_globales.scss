@@ -1,0 +1,81 @@
+@use 'variables' as v;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    // scroll-snap-type: y mandatory;
+    
+}
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: v.$negro1;
+    font-family: v.$fuente;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0 2.4rem;
+}
+
+p {
+    font-size: 2rem;
+    color: v.$gris;
+}
+
+.contenedor {
+    width: 88%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+h1, h2, h3 {
+    margin: 1.2rem 0;
+}
+
+h1 {
+    font-size: 3.8rem ;
+    font-weight: 400;
+    
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem ;
+}
+img {
+    max-width: 100%;
+    // width: 100%;     esto es para usar los snippets q tienen un width y height recomendados 
+    // height: auto;    y para solucionar los problemas q eso causa
+    display: block;
+ }
+.rojo{
+    color: v.$rojo;
+    text-align: center;
+};
+.rojo1{
+ color: white;
+}
+.margin {
+    margin-top: 1.6rem;
+}
+.padding {
+    padding: 1.6rem auto 0;  
+ }
+.scroll {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+}  
+.flex {
+    display: flex;
+    justify-content: center;
+}

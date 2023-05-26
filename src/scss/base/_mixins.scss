@@ -1,0 +1,44 @@
+@use 'variables' as v;
+
+
+// @mixin  heading ($color: v.$gris) { //@ propio de sass son directivas
+//     text-transform: uppercase;
+//     font-size: 2.4rem;
+//     color: $color;
+//     letter-spacing: 2px;
+// }
+
+@mixin phone {
+    @media (min-width: v.$phone) {
+        @content;
+    }
+}
+@mixin semitablet {
+    @media (min-width: v.$semitablet) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: v.$laptop) {
+        @content;
+    }
+}
+
+@mixin pc {
+    @media (min-width:  v.$pc) {
+        @content;
+    }
+}
+
+@mixin grid ($columns, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
