@@ -1,37 +1,10 @@
-.gridd {
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-}
-@media (min-width: 992px) {
-  .gridd {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.4rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .galeria-img .img3 {
-    display: block;
-    align-items: center;
-    grid-column: 1/2;
-    margin-top: 1.6rem;
-  }
-  .galeria-img .aside {
-    grid-column: 2/3;
-  }
-}
-
-@media (min-width: 992px) {
-  .prox {
-    display: none;
-  }
-}
 .btn {
   background-color: rgb(189, 179, 179);
   padding: 1.6rem;
   display: flex;
   justify-content: center;
+  border-radius: 13rem;
+  width: 16rem;
 }
 .btn a {
   color: white;
@@ -51,12 +24,52 @@
 }
 
 .img-fechas {
-  max-width: 40%;
-  object-fit: contain;
+  display: none;
+}
+@media (min-width: 768px) {
+  .img-fechas {
+    display: block;
+    max-width: 40%;
+    object-fit: contain;
+  }
 }
 
 .img-fechas img {
-  object-fit: cover;
+  display: none;
+}
+@media (min-width: 768px) {
+  .img-fechas img {
+    display: block;
+    object-fit: cover;
+  }
+}
+
+.center {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    gap: 2.4rem;
+  }
+}
+
+.center-evenly {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .center-evenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    gap: 4.8rem;
+  }
 }
 
 /*# sourceMappingURL=fechas.css.map */
