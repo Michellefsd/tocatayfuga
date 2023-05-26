@@ -387,7 +387,7 @@ img {
 .video .transp {
   position: absolute;
   background: rgb(0, 0, 0);
-  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgb(0, 0, 0) 90%);
   height: 100%;
   width: 100%;
 }

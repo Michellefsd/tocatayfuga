@@ -11,7 +11,7 @@
     .transp {
         position: absolute;
         background: rgb(0,0,0);
-        background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+        background: radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(0,0,0,1) 90%);
         height: 100%;
         width: 100%;
     }   
