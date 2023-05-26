@@ -4,11 +4,9 @@
 .footer {
     scroll-snap-align: center;
     scroll-snap-stop: always;
-
     @include m.phone {
         text-align: center;
     }
-
     a{
         color: v.$gris; 
         padding: 0 1.6rem;
@@ -16,15 +14,12 @@
             color: rgb(184, 179, 179);
         }
     }
-
- 
 }
 
 .nav-princ-footer {
     margin-top: 1.6rem;
     scroll-snap-align: center;
     scroll-snap-stop: always;
-
     a{
         display: block;
         justify-content: center;
@@ -45,7 +40,7 @@
 }
 
 .copyright{
-    margin: 1.6rem;
+    margin: 2.4rem auto;
     font-size: 1.6rem;
     text-align: center;
      @include m.tablet {

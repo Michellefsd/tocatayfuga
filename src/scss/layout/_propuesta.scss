@@ -44,3 +44,12 @@
         max-width: 100%;
     }
 }
+.img-propuesta {
+    @include m.tablet {
+        max-width: 40%;
+        object-fit: contain;
+        img {
+            object-fit: cover;
+        }
+    }
+}

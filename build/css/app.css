@@ -403,6 +403,7 @@ img {
 }
 @media (min-width: 600px) {
   .principal-img {
+    padding: 0;
     margin-top: 5rem;
   }
 }
@@ -413,7 +414,7 @@ img {
     max-width: 70%;
     justify-content: center;
     align-items: center;
-    gap: 1.6rem;
+    gap: 2.4rem;
   }
 }
 
@@ -472,6 +473,16 @@ img {
     max-width: 100%;
   }
 }
+@media (min-width: 768px) {
+  .img-propuesta {
+    max-width: 40%;
+    object-fit: contain;
+  }
+  .img-propuesta img {
+    object-fit: cover;
+  }
+}
+
 .btn {
   background-color: rgb(189, 179, 179);
   padding: 1.6rem;
@@ -586,7 +597,7 @@ img {
 }
 
 .copyright {
-  margin: 1.6rem;
+  margin: 2.4rem auto;
   font-size: 1.6rem;
   text-align: center;
 }
@@ -601,11 +612,13 @@ img {
   flex-direction: column;
   gap: 2.4rem;
   padding: 1.6rem;
-  margin: 1.6rem;
   justify-content: center;
   align-items: center;
 }
 
+.img-gal {
+  margin: 0.8rem;
+}
 @media (min-width: 992px) {
   .img-gal {
     display: block;
@@ -615,26 +628,6 @@ img {
     padding: 2.4rem;
     margin: 1.6rem auto;
   }
-}
-
-.especial-img {
-  max-width: 100%;
-  margin-bottom: 1.6rem;
-}
-@media (min-width: 768px) {
-  .especial-img {
-    max-width: 69%;
-  }
-}
-
-.link {
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-}
-.link h1 {
-  margin: 1.6rem auto;
 }
 
 /*# sourceMappingURL=app.css.map */
