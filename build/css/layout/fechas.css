@@ -1,13 +1,19 @@
 .btn {
-  background-color: rgb(189, 179, 179);
+  background-color: rgb(32, 8, 8);
+  border: 2px solid rgb(32, 8, 8);
   padding: 1.6rem;
   display: flex;
   justify-content: center;
   border-radius: 13rem;
-  width: 16rem;
+  width: 12rem;
 }
-.btn a {
-  color: white;
+.btn:hover {
+  background-color: rgb(43, 97, 160);
+  border: 2px solid rgb(189, 179, 179);
+}
+
+a {
+  color: rgb(189, 179, 179);
   text-align: center;
 }
 
@@ -29,7 +35,7 @@
 @media (min-width: 768px) {
   .img-fechas {
     display: block;
-    max-width: 40%;
+    max-width: 60rem;
     object-fit: contain;
   }
 }
@@ -54,7 +60,7 @@
     justify-content: center;
     align-items: center;
     text-align: start;
-    gap: 2.4rem;
+    gap: 3.6rem;
   }
 }
 

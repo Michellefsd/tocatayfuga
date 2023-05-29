@@ -2,17 +2,22 @@
 @use '../base/variables' as v;
 
 .btn {
-    background-color: v.$gris ;
+    background-color: v.$rojo ;
+    border: 2px solid v.$rojo;
     padding: 1.6rem;
     display: flex;
     justify-content: center;
     border-radius: 13rem;
-    width: 16rem;
-    a{
-        color: white;
-        text-align: center;    
+    width: 12rem;
+    &:hover {
+        background-color: v.$rojo1;
+        border: 2px solid v.$gris;
     }
 }
+a {
+    color: v.$gris;
+    text-align: center;    
+} 
 .column {
     display: flex;
     flex-direction: column;
@@ -27,7 +32,7 @@
     display: none;
     @include m.tablet {
         display: block;
-        max-width: 40%;
+        max-width: 60rem;
         object-fit: contain;
     }
 }
@@ -46,7 +51,7 @@
         justify-content: center;
         align-items: center;
         text-align: start;
-        gap: 2.4rem;
+        gap: 3.6rem;
     }
 }
 .center-evenly {
