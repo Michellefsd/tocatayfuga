@@ -15,9 +15,7 @@ body {
     font-family: v.$fuente;
     font-size: 1.6rem;
     margin: 0;
-    padding: 0 2.4rem;
 }
-
 p {
     font-size: 2rem;
     color: v.$gris;
@@ -27,12 +25,18 @@ p {
     width: 80%;
     max-width: 120rem;
     margin: 0 auto;
+    padding: 0 2.4rem;
 }
 a {
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    letter-spacing: .1rem;
     text-transform: uppercase;
     font-weight: bold;
+    color: v.$negro;
+}
+a:hover {
+   color: v.$rojo1; 
 }
 
 
@@ -68,4 +72,34 @@ img {
     scroll-snap-align: center;
     scroll-snap-stop: always;
     scroll-behavior: smooth;
-}  
+} 
+.relative {
+    position: relative;
+}
+#menu {
+    position: fixed; 
+    z-index: 1; 
+    right: 55px; 
+    top: 55px;
+}
+#menu .navegacion-principal {
+    display: none;
+}
+#menu:hover .navegacion-principal {
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: v.$gris;
+    padding: 20px;
+}
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.navegacion-principal a {
+    margin: 1rem;
+}
