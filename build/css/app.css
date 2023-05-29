@@ -342,11 +342,11 @@ a {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-weight: bold;
-  color: rgb(32, 8, 8);
+  color: #1e1e1e;
 }
 
 a:hover {
-  color: rgb(45, 182, 115);
+  color: white;
 }
 
 h1, h2, h3 {
@@ -407,7 +407,8 @@ img {
   top: 100%;
   z-index: 1;
   border-radius: 5px;
-  background-color: rgb(189, 179, 179);
+  background-color: #1e1e1e;
+  opacity: 0.5;
   padding: 20px;
 }
 
@@ -545,10 +546,17 @@ a {
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
+  display: block;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .mes {

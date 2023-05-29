@@ -36,7 +36,7 @@ a {
     color: v.$negro;
 }
 a:hover {
-   color: v.$rojo1; 
+   color: white; 
 }
 
 
@@ -92,7 +92,8 @@ img {
     top:100%;
     z-index: 1;
     border-radius: 5px;
-    background-color: v.$gris;
+    background-color: v.$negro;
+    opacity: 0.5;
     padding: 20px;
 }
 .navegacion-principal {

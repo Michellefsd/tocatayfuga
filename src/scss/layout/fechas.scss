@@ -19,11 +19,17 @@ a {
     text-align: center;    
 } 
 .column {
-    display: flex;
-    flex-direction: column;
+    display: block;
     justify-content: center;
     align-items: center;
+    @include m.tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
 .mes {
     text-align: center;
     color: v.$gris;

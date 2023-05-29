@@ -18,10 +18,17 @@ a {
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
+  display: block;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .mes {
