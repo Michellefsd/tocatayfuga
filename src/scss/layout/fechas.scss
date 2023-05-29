@@ -65,9 +65,9 @@ a {
     @include m.tablet{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         text-align: start;
-        gap: 4.8rem;
+        gap: 19rem;
     }
 }

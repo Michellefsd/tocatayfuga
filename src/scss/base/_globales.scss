@@ -65,6 +65,9 @@ img {
 .margin {
     margin-top: 1.6rem;
 }
+.margin-esp {
+    margin-top: 4.8rem;
+}
 .padding {
     padding: 1.6rem auto;  
  }
@@ -78,7 +81,7 @@ img {
 }
 #menu {
     position: fixed; 
-    z-index: 1; 
+    z-index: 2; 
     right: 55px; 
     top: 55px;
 }
@@ -103,4 +106,7 @@ img {
 }
 .navegacion-principal a {
     margin: 1rem;
+}
+.logo {
+    width: 68rem;
 }

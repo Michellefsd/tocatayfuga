@@ -1,2 +1,2 @@
-.video,.video .transp,.video video{width:100%}@use '../base/variables' as v;@use '../base/mixins' as m;.video{position:relative;height:auto}.video .transp{position:absolute;background:#000;background:radial-gradient(circle,rgba(0,0,0,.2) 0,#000 90%);height:100%}
+.video,.video .transp,.video video{width:100%}@use '../base/variables' as v;@use '../base/mixins' as m;.video{position:relative;height:auto}.video .transp{position:absolute;background:#000;background:radial-gradient(circle,rgba(0,0,0,.2) 0,#000 90%);height:100%}.cover-seamark{position:absolute;z-index:1;@inc bottom: 10%;right:23%}
 /*# sourceMappingURL=_video.min.css.map */

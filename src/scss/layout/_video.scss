@@ -18,3 +18,21 @@
 .video video {
     width: 100%;
 }
+.cover-seamark {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    object-fit: contain;
+    @include m.tablet {
+        bottom: 5%;
+        right: 5%;
+    }
+    @include m.laptop {
+        bottom: 10%;
+        right: 23%;
+    }
+    @include m.pc {
+        bottom: 13%;
+        right: 26%
+    }
+}

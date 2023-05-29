@@ -375,6 +375,10 @@ img {
   margin-top: 1.6rem;
 }
 
+.margin-esp {
+  margin-top: 4.8rem;
+}
+
 .padding {
   padding: 1.6rem auto;
 }
@@ -391,7 +395,7 @@ img {
 
 #menu {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   right: 55px;
   top: 55px;
 }
@@ -422,6 +426,10 @@ img {
   margin: 1rem;
 }
 
+.logo {
+  width: 68rem;
+}
+
 .video {
   position: relative;
   height: auto;
@@ -437,6 +445,31 @@ img {
 
 .video video {
   width: 100%;
+}
+
+.cover-seamark {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  object-fit: contain;
+}
+@media (min-width: 768px) {
+  .cover-seamark {
+    bottom: 5%;
+    right: 5%;
+  }
+}
+@media (min-width: 992px) {
+  .cover-seamark {
+    bottom: 10%;
+    right: 23%;
+  }
+}
+@media (min-width: 1200px) {
+  .cover-seamark {
+    bottom: 13%;
+    right: 26%;
+  }
 }
 
 .principal-img {
@@ -606,10 +639,10 @@ a {
   .center-evenly {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: start;
-    gap: 4.8rem;
+    gap: 19rem;
   }
 }
 
