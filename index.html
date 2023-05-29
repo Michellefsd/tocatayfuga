@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tocata & Fuga </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
@@ -12,48 +13,43 @@
     <link rel="Stylesheet" href="build/css/app.css">
 </head>
 <body>
-    <header>
-        <a href="index.html"></a>
-        <div class="container">
+    <div class="relative">
+        <div id="menu">
+            <i class="fa-solid fa-bars rgb(189, 179, 179) fa-2xl" style="color: rgb(189, 179, 179); position: fixed; z-index: 1; right: 55px; top: 55px;"></i>
             <nav class="navegacion-principal">
-                <a href="propuesta.html">Propuesta</a>
-                <a href="fechas.html">Fechas</a>
-                <a href="galeria.html">Galería</a>
-            </nav>
+                   <a href="propuesta.html">Propuesta</a>
+                   <a href="fechas.html">Fechas</a>
+                   <a href="galeria.html">Galería</a>
+            </nav> 
         </div>
-    </header>
-   
+    </div>
     <div class="video">
         <div class="transp"></div>
         <video  autoplay muted loop>
             <source src="src/video/tocata.mp4" type="video/mp4">
         </video>
     </div>
-
-
-
-
-
-    <div class="container center">
-        <section class="principal-img">
-            <div class="container-img">
-                <picture class="img-propuesta">
-                    <img src="build/img/tyf2.webp" alt="Imagen Grupo">
-                </picture>
-            </div>
-            <div class="propuesta-txt">
-                <p class ="fecha">9 de Septiembre, Teatro Movie</p>
-                <p>Tocata & Fuga presenta una apuesta 
-                    al humor ingenioso, con diálogos ocurrentes, donde combina en forma sutíl
-                    e inteligente humor y música y sketches con inesperados desenlaces. La música forma parte inherente 
-                    de su espectáculo.
-                </p>
-            </div>
-        </section>    
+    <div class="container">
+        <div class="center">
+            <section class="principal-img">
+                <div class="container-img">
+                    <picture class="img-propuesta">
+                        <img src="build/img/tyf2.webp" alt="Imagen Grupo">
+                    </picture>
+                </div>
+                <div class="propuesta-txt">
+                    <p class ="fecha">9 de Septiembre, Teatro Movie</p>
+                    <p>Tocata & Fuga presenta una apuesta 
+                        al humor ingenioso, con diálogos ocurrentes, donde combina en forma sutíl
+                        e inteligente humor y música y sketches con inesperados desenlaces. La música forma parte inherente 
+                        de su espectáculo.
+                    </p>
+                </div>
+            </section>    
+        </div>
     </div>
-
     <footer class="footer">
-        <p class="copyright container"> Todos los derechos Reservados. Copyright 2023</p>
+        <p class="copyright center"> Todos los derechos Reservados. Copyright 2023</p>
     </footer>
 </body>
 </html>

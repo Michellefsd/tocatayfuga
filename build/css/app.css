@@ -322,7 +322,6 @@ body {
   font-family: "PT Serif", serif;
   font-size: 1.6rem;
   margin: 0;
-  padding: 0 2.4rem;
 }
 
 p {
@@ -334,13 +333,20 @@ p {
   width: 80%;
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 2.4rem;
 }
 
 a {
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-weight: bold;
+  color: rgb(32, 8, 8);
+}
+
+a:hover {
+  color: rgb(45, 182, 115);
 }
 
 h1, h2, h3 {
@@ -377,6 +383,42 @@ img {
   scroll-snap-align: center;
   scroll-snap-stop: always;
   scroll-behavior: smooth;
+}
+
+.relative {
+  position: relative;
+}
+
+#menu {
+  position: fixed;
+  z-index: 1;
+  right: 55px;
+  top: 55px;
+}
+
+#menu .navegacion-principal {
+  display: none;
+}
+
+#menu:hover .navegacion-principal {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  border-radius: 5px;
+  background-color: rgb(189, 179, 179);
+  padding: 20px;
+}
+
+.navegacion-principal {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.navegacion-principal a {
+  margin: 1rem;
 }
 
 .video {
@@ -611,13 +653,12 @@ img {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-  padding: 1.6rem;
   justify-content: center;
   align-items: center;
 }
 
 .img-gal {
-  margin: 0.8rem;
+  margin: 0.8rem 0;
 }
 @media (min-width: 992px) {
   .img-gal {
@@ -625,7 +666,7 @@ img {
     justify-content: center;
     max-width: 80%;
     height: auto;
-    padding: 2.4rem;
+    padding: 2.4rem 0;
     margin: 1.6rem auto;
   }
 }
